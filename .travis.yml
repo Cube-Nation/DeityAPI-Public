@@ -3,7 +3,7 @@ env:
   global:
     - SONATYPE_THIRDPARTY_SERVER=cna-thirdparty
     - SONATYPE_USERNAME=deployment
-    - secure: "cjACNjCgjIHP2+TvItjcYttVBkcv06AuYf69jVv3m9jhYA4Oicg46d81dT6Y\npHnGnMDOJh3p10DqnXY/d2J7LeYC1YRtBb937S1oaX6RVeG+qFJj85ghKDHn\nIsyYcOmZXE1Kuhdf6AHLPCk57eMpd2e+e5hnoFvoT0smN9Y9MM4="
+    - secure: "NHgpc7vC7QnKeMje/Y7ph5vWE27uIzqYDh8l6z5q5LwdtAH29v4Ef2NGvo8F\nHK/Urz+wmZe20VZ/mv2goEZ5Ta0ANs5ULIR3CHycNkFwNQFkOO8X+AYNG2HT\nqqznTcm1s7lOqmrIu+RJ1+CU+VKsA9l8LbR8PtF+SJeea0lWZFU="
     
 after_script:
   - python .mvnSettings.py
