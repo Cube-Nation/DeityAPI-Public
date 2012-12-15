@@ -2,13 +2,13 @@ package com.imdeity.deityapi.object;
 
 import java.util.ArrayList;
 
-import net.minecraft.server.Packet39AttachEntity;
+import net.minecraft.server.v1_4_5.Packet39AttachEntity;
 
 import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
-import org.bukkit.craftbukkit.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_4_5.entity.CraftPlayer;
 import org.bukkit.entity.Ocelot;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Wolf;

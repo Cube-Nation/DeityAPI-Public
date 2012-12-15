@@ -3,13 +3,12 @@ package com.imdeity.deityapi.object;
 import java.util.HashMap;
 import java.util.Random;
 
-import net.minecraft.server.EntityFireball;
-import net.minecraft.server.EntitySmallFireball;
+import net.minecraft.server.v1_4_5.EntitySmallFireball;
 
 import org.bukkit.Effect;
 import org.bukkit.EntityEffect;
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.CraftWorld;
+import org.bukkit.craftbukkit.v1_4_5.CraftWorld;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
@@ -36,7 +35,6 @@ public class EffectObject {
             this.player = player;
         }
         
-        @Override
         public void run() {
             try {
                 if (this.player.isOnline()) {
@@ -180,9 +178,11 @@ public class EffectObject {
         for (int i = 0; i < 3; i++) {
             slopevector[i] /= linelength;
         }
+        /*
         EntityFireball entityFireball = new EntityFireball(world.getHandle(), originCoords[0], originCoords[1], originCoords[2],
                 slopevector[0] * linelength, slopevector[1] * linelength, slopevector[2] * linelength);
         world.getHandle().addEntity(entityFireball);
+        */
     }
     
     /**
