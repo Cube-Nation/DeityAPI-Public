@@ -234,9 +234,10 @@ public class PlayerObject {
     }
     
     public boolean sit(Player player) {
+        // TODO
         if (player.isOnline()) {
-            ((CraftPlayer) player).getHandle().netServerHandler.sendPacket(new Packet39AttachEntity(
-                    ((CraftPlayer) player).getHandle(), ((CraftPlayer) player).getHandle()));
+//            ((CraftPlayer) player).getHandle().netServerHandler.sendPacket(new Packet39AttachEntity(
+  //                  ((CraftPlayer) player).getHandle(), ((CraftPlayer) player).getHandle()));
             return true;
         }
         return false;
