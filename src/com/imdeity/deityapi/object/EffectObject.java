@@ -3,12 +3,12 @@ package com.imdeity.deityapi.object;
 import java.util.HashMap;
 import java.util.Random;
 
-import net.minecraft.server.v1_4_6.EntitySmallFireball;
+import net.minecraft.server.v1_4_R1.EntitySmallFireball;
 
 import org.bukkit.Effect;
 import org.bukkit.EntityEffect;
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_4_6.CraftWorld;
+import org.bukkit.craftbukkit.v1_4_R1.CraftWorld;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
