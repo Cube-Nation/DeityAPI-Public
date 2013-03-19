@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import org.bukkit.Location;
 import org.bukkit.World;
-import org.bukkit.craftbukkit.v1_4_R1.entity.CraftCreature;
+import org.bukkit.craftbukkit.v1_5_R1.entity.CraftCreature;
 import org.bukkit.entity.Blaze;
 import org.bukkit.entity.CaveSpider;
 import org.bukkit.entity.Creeper;
@@ -163,16 +163,16 @@ public class MobObject {
         return null;
     }
     
-    public net.minecraft.server.v1_4_R1.PathPoint getPathPoint(int x, int y, int z) {
-        return new net.minecraft.server.v1_4_R1.PathPoint(x, y, z);
+    public net.minecraft.server.v1_5_R1.PathPoint getPathPoint(int x, int y, int z) {
+        return new net.minecraft.server.v1_5_R1.PathPoint(x, y, z);
     }
     
-    public void moveCreatureToMultiplePoint(CraftCreature entity, net.minecraft.server.v1_4_R1.PathPoint[] points) {
-        entity.getHandle().setPathEntity(new net.minecraft.server.v1_4_R1.PathEntity(points));
+    public void moveCreatureToMultiplePoint(CraftCreature entity, net.minecraft.server.v1_5_R1.PathPoint[] points) {
+        entity.getHandle().setPathEntity(new net.minecraft.server.v1_5_R1.PathEntity(points));
     }
     
     public void moveCreatureToSinglePoint(CraftCreature entity, int x, int y, int z) {
-        entity.getHandle().setPathEntity(new net.minecraft.server.v1_4_R1.PathEntity(new net.minecraft.server.v1_4_R1.PathPoint[] { new net.minecraft.server.v1_4_R1.PathPoint(x, y, z) }));
+        entity.getHandle().setPathEntity(new net.minecraft.server.v1_5_R1.PathEntity(new net.minecraft.server.v1_5_R1.PathPoint[] { new net.minecraft.server.v1_5_R1.PathPoint(x, y, z) }));
     }
     
     /**
