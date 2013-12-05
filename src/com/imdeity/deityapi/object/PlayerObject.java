@@ -2,13 +2,13 @@ package com.imdeity.deityapi.object;
 
 import java.util.ArrayList;
 
-import net.minecraft.server.v1_6_R2.Packet39AttachEntity;
+import net.minecraft.server.v1_7_R1.PacketPlayOutAttachEntity;
 
 import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
-import org.bukkit.craftbukkit.v1_6_R2.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_7_R1.entity.CraftPlayer;
 import org.bukkit.entity.Ocelot;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Wolf;
@@ -235,7 +235,7 @@ public class PlayerObject {
     
     public boolean sit(Player player) {
         if (player.isOnline()) {
-            ((CraftPlayer) player).getHandle().playerConnection.sendPacket(new Packet39AttachEntity(0, 
+            ((CraftPlayer) player).getHandle().playerConnection.sendPacket(new PacketPlayOutAttachEntity(0, 
                     ((CraftPlayer) player).getHandle(), ((CraftPlayer) player).getHandle()));
             return true;
         }
