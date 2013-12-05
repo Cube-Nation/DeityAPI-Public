@@ -66,11 +66,13 @@ public class DeityAPI extends DeityPlugin implements Listener {
             metrics.start();
         } catch (IOException e) {
         }
+        /*
         if (DeityAPI.plugin.config.getBoolean(DeityAPIConfigHelper.INFORM_ON_UPDATE)) {
             if (plugin.getDescription().getWebsite() != null) {
                 new AutoUpdater(this);
             }
         }
+        */
     }
     
     @Override
