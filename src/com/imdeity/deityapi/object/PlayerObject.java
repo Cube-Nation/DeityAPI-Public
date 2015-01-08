@@ -59,7 +59,7 @@ public class PlayerObject {
      * @return ArrayList<Player>
      */
     public Player[] getOnlinePlayers() {
-        return (Player[])DeityAPI.plugin.getServer().getOnlinePlayers().toArray();
+        return DeityAPI.plugin.getServer().getOnlinePlayers().toArray(new Player[0]);
     }
     
     public void clearAllInventory(Player player) {
